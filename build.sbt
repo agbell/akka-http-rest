@@ -21,6 +21,8 @@ libraryDependencies ++= {
     "com.typesafe.slick" %% "slick-hikaricp" % "3.1.0",
     "org.slf4j" % "slf4j-nop" % "1.6.4",
 
+    "org.xerial" % "sqlite-jdbc" % "3.8.6",
+
     "io.circe" %% "circe-core" % circeV,
     "io.circe" %% "circe-generic" % circeV,
     "io.circe" %% "circe-parser" % circeV,

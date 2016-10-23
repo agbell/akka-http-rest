@@ -9,7 +9,7 @@ trait Config {
   val httpHost = httpConfig.getString("interface")
   val httpPort = httpConfig.getInt("port")
 
-  private val databaseConfig = config.getConfig("pgdb")
+  private val databaseConfig = config.getConfig("litedb")
     val jdbcUrl = databaseConfig.getString("db.url")
     val dbUser = databaseConfig.getString("db.user")
     val dbPassword = databaseConfig.getString("db.password")
