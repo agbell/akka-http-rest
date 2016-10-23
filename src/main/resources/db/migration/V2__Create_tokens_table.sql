@@ -1,6 +1,6 @@
 CREATE TABLE "tokens" (
   "id"      BIGSERIAL PRIMARY KEY,
   "user_id" BIGINT,
-  "token"   VARCHAR NOT NULL
+  "token"   VARCHAR NOT NULL,
+   FOREIGN KEY(user_id) REFERENCES users(id)
 );
-ALTER TABLE "tokens" ADD CONSTRAINT "USER_FK" FOREIGN KEY ("user_id") REFERENCES "users" ("id") ON UPDATE RESTRICT ON DELETE CASCADE;
