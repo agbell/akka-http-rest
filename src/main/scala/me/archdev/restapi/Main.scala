@@ -19,7 +19,7 @@ object Main extends App with Config {
   val flywayService = new FlywayService(jdbcUrl, dbUser, dbPassword)
   flywayService.migrateDatabaseSchema
 
-  val databaseService = new DatabaseService(jdbcUrl, dbUser, dbPassword)
+  val databaseService = new DatabaseService()
 
   val usersService = new UsersService(databaseService)
   val authService = new AuthService(databaseService)(usersService)
