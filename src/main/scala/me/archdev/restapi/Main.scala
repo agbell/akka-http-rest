@@ -16,8 +16,8 @@ object Main extends App with Config {
   implicit val log: LoggingAdapter = Logging(actorSystem, getClass)
   implicit val materializer: ActorMaterializer = ActorMaterializer()
 
-//  val flywayService = new FlywayService(jdbcUrl, dbUser, dbPassword)
-//  flywayService.migrateDatabaseSchema
+  val flywayService = new FlywayService(jdbcUrl, dbUser, dbPassword)
+  flywayService.migrateDatabaseSchema
 
   val databaseService = new DatabaseService()
 
