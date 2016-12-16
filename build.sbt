@@ -14,11 +14,11 @@ libraryDependencies ++= {
     "de.heikoseeberger" %% "akka-http-circe" % "1.6.0",
 
     "com.typesafe.slick" %% "slick" % slickVersion,
-    "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
+//    "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
     "org.flywaydb" % "flyway-core" % "3.2.1",
 
-    "com.zaxxer" % "HikariCP" % "2.4.5",
-    "com.typesafe.slick" %% "slick-hikaricp" % "3.1.0",
+//    "com.zaxxer" % "HikariCP" % "2.4.5",
+//    "com.typesafe.slick" %% "slick-hikaricp" % "3.1.0",
     "org.slf4j" % "slf4j-nop" % "1.6.4",
 
     "org.xerial" % "sqlite-jdbc" % "3.8.6",
